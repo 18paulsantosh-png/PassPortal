@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../style.css">
+    <script src="../../script.js" defer></script>
+    <title>Apply for a Pass | PassPortal</title>
+</head>
+<body>
+    <header>
+        <h1>PassPortal</h1>
+        <p>New Transport Pass Application</p>
+        <nav>
+            <a href="../../index.html">Home</a>
+            <a href="dashboard.html">Dashboard</a>
+            <a href="profile.html">My Profile</a>
+            <a href="../routes.html">Routes</a>
+            <a href="../validation.html">Validate Pass</a>
+            <a href="../login.html">Logout</a>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Apply for a Transport Pass</h2>
+            <p>Complete the form below to request a campus transport pass. Make sure the information is accurate.</p>
+        </section>
+
+        <section>
+            <h2>Application Form</h2>
+            <form id="pass-application-form">
+                <p>
+                    <label for="application-route">Select your route</label>
+                    <select id="application-route" name="route" required>
+                        <option value="">Loading routes...</option>
+                    </select>
+                </p>
+
+                <p>
+                    <label for="pass-type">Pass type</label>
+                    <select id="pass-type" name="passType" required>
+                        <option value="">Choose pass type</option>
+                        <option value="daily">Daily</option>
+                        <option value="monthly">Monthly</option>
+                        <option value="semester">Semester</option>
+                    </select>
+                </p>
+
+                <p>
+                    <label for="pass-duration">Duration</label>
+                    <select id="pass-duration" name="duration" required>
+                        <option value="">Choose duration</option>
+                        <option value="1">1 month</option>
+                        <option value="3">3 months</option>
+                        <option value="6">6 months</option>
+                    </select>
+                </p>
+
+                <p>
+                    <label for="application-start-date">Preferred start date</label>
+                    <input type="date" id="application-start-date" name="startDate" required>
+                </p>
+
+                <p style="padding: 16px; border-radius: 12px; background: linear-gradient(135deg, #f0edff, #e8fffe); font-weight: 600;">
+                    Selected route's monthly fare: ₹<span id="route-monthly-fare">0</span><br>
+                    <strong style="font-size: 1.1rem; color: #6c5ce7;">Estimated Fee: ₹<span id="application-fee">0</span></strong>
+                </p>
+
+                <p>
+                    <button type="submit">🚌 Submit Application</button>
+                </p>
+
+                <div id="application-message"></div>
+            </form>
+        </section>
+
+        <section>
+            <h2>After Applying</h2>
+            <ol>
+                <li>Your application will be reviewed by an administrator.</li>
+                <li>You can check the application status from your dashboard.</li>
+                <li>After approval, payment and pass issuance will follow.</li>
+            </ol>
+            <p><a href="dashboard.html">← Back to Dashboard</a></p>
+            <p><a href="my-pass.html">View My Pass</a></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>PassPortal — Campus Transport Pass Management System</p>
+        <p>© 2026–2027 | Student Project</p>
+    </footer>
+</body>
+</html>

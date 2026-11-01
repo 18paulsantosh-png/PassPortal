@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../style.css">
+    <script src="../../script.js" defer></script>
+    <title>Student Management | PassPortal</title>
+</head>
+<body>
+    <header>
+        <h1>PassPortal</h1>
+        <p>Student Management</p>
+        <nav>
+            <a href="../../index.html">Home</a>
+            <a href="dashboard.html">Dashboard</a>
+            <a href="students.html">Students</a>
+            <a href="routes.html">Routes</a>
+            <a href="applications.html">Applications</a>
+            <a href="payments.html">Payments</a>
+            <a href="passes.html">Passes</a>
+            <a href="../login.html">Logout</a>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Registered Students</h2>
+            <p>View all registered student accounts.</p>
+            <div id="admin-students-message"></div>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Student ID</th>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Phone</th>
+                        <th>Course</th>
+                        <th>Year</th>
+                        <th>Registered</th>
+                    </tr>
+                </thead>
+                <tbody id="admin-students-table-body">
+                    <tr><td colspan="7" style="text-align:center; padding:40px;">Loading students...</td></tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section>
+            <h2>Quick Links</h2>
+            <p><a href="dashboard.html">← Back to Dashboard</a></p>
+            <p><a href="applications.html">📋 Review Applications</a></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>PassPortal — Campus Transport Pass Management System</p>
+        <p>© 2026–2027 | Student Project</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../style.css">
+    <script src="../../script.js" defer></script>
+    <title>Renew Transport Pass | PassPortal</title>
+</head>
+<body>
+    <header>
+        <h1>PassPortal</h1>
+        <p>Transport Pass Renewal</p>
+        <nav>
+            <a href="../../index.html">Home</a>
+            <a href="dashboard.html">Dashboard</a>
+            <a href="profile.html">My Profile</a>
+            <a href="../routes.html">Routes</a>
+            <a href="../validation.html">Validate Pass</a>
+            <a href="../login.html">Logout</a>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Renew Your Transport Pass</h2>
+            <p>Select an approved pass and choose your renewal duration.</p>
+        </section>
+
+        <section>
+            <h2>Renewal Form</h2>
+            <form id="renew-pass-form">
+                <p>
+                    <label for="renew-pass-select">Select Approved Pass</label>
+                    <select id="renew-pass-select" name="passId" required>
+                        <option value="">Loading passes...</option>
+                    </select>
+                </p>
+
+                <p>
+                    <label for="renew-duration">Renewal Duration</label>
+                    <select id="renew-duration" name="duration" required>
+                        <option value="">Select duration</option>
+                        <option value="1">1 Month</option>
+                        <option value="3">3 Months</option>
+                        <option value="6">6 Months</option>
+                        <option value="12">12 Months</option>
+                    </select>
+                </p>
+
+                <p>
+                    <button type="submit">🔄 Submit Renewal</button>
+                </p>
+
+                <div id="renew-message"></div>
+            </form>
+        </section>
+
+        <section>
+            <h2>What Happens Next?</h2>
+            <ol>
+                <li>Your renewal request will be reviewed by an administrator.</li>
+                <li>The administrator will verify your existing pass.</li>
+                <li>Any required payment will be recorded.</li>
+                <li>Your renewed pass will be issued after approval.</li>
+            </ol>
+            <p><a href="my-pass.html">🎫 View My Pass</a></p>
+            <p><a href="payments.html">💳 View Payment History</a></p>
+            <p><a href="dashboard.html">← Back to Dashboard</a></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>PassPortal — Campus Transport Pass Management System</p>
+        <p>© 2026–2027 | Student Project</p>
+    </footer>
+</body>
+</html>

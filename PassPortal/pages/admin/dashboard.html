@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../style.css">
+    <script src="../../script.js" defer></script>
+    <title>Admin Dashboard | PassPortal</title>
+</head>
+<body>
+    <header>
+        <h1>PassPortal</h1>
+        <p>Administrator Dashboard</p>
+        <nav>
+            <a href="../../index.html">Home</a>
+            <a href="dashboard.html">Dashboard</a>
+            <a href="students.html">Students</a>
+            <a href="routes.html">Routes</a>
+            <a href="applications.html">Applications</a>
+            <a href="payments.html">Payments</a>
+            <a href="passes.html">Passes</a>
+            <a href="../login.html">Logout</a>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Welcome, Administrator 👋</h2>
+            <p>Use this dashboard to oversee campus transport pass operations, review student applications, and manage transport-related records.</p>
+        </section>
+
+        <section>
+            <h2>System Overview</h2>
+            <div class="stat-cards">
+                <div class="stat-card">
+                    <h4>Registered Students</h4>
+                    <div class="stat-value" id="admin-total-students">0</div>
+                </div>
+                <div class="stat-card">
+                    <h4>Pending Applications</h4>
+                    <div class="stat-value" id="admin-pending-applications">0</div>
+                </div>
+                <div class="stat-card">
+                    <h4>Approved Applications</h4>
+                    <div class="stat-value" id="admin-approved-applications">0</div>
+                </div>
+                <div class="stat-card">
+                    <h4>Rejected Applications</h4>
+                    <div class="stat-value" id="admin-rejected-applications">0</div>
+                </div>
+                <div class="stat-card">
+                    <h4>Issued Passes</h4>
+                    <div class="stat-value" id="admin-issued-passes">0</div>
+                </div>
+                <div class="stat-card">
+                    <h4>Pending Payments</h4>
+                    <div class="stat-value" id="admin-pending-payments">0</div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Administration Modules</h2>
+            <p><a href="students.html">👥 Student Management</a> — View registered students</p>
+            <p><a href="routes.html">🛣️ Route Management</a> — Add, edit, and delete routes</p>
+            <p><a href="applications.html">📋 Application Management</a> — Review and approve/reject applications</p>
+            <p><a href="payments.html">💰 Payment Management</a> — View payment records and revenue</p>
+            <p><a href="passes.html">🎫 Issued Passes</a> — View all approved passes</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>PassPortal — Campus Transport Pass Management System</p>
+        <p>© 2026–2027 | Student Project</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../style.css">
+    <script src="../../script.js" defer></script>
+    <title>Student Dashboard | PassPortal</title>
+</head>
+<body>
+    <header>
+        <h1>PassPortal</h1>
+        <p>Student Dashboard</p>
+        <nav>
+            <a href="../../index.html">Home</a>
+            <a href="dashboard.html">Dashboard</a>
+            <a href="profile.html">My Profile</a>
+            <a href="../routes.html">Routes</a>
+            <a href="../validation.html">Validate Pass</a>
+            <a href="../login.html">Logout</a>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <p id="dashboard-greeting"></p>
+            <h2>Welcome, <span id="dashboard-name">Student</span>!</h2>
+            <p>Your Campus Transport Pass dashboard. Manage your pass and view application info here.</p>
+
+            <h3>My Account</h3>
+            <table>
+                <tbody>
+                    <tr><th>Full Name</th><td id="dashboard-full-name">Loading...</td></tr>
+                    <tr><th>Student ID</th><td id="dashboard-student-id">Loading...</td></tr>
+                    <tr><th>Email</th><td id="dashboard-email">Loading...</td></tr>
+                    <tr><th>Course</th><td id="dashboard-course">Loading...</td></tr>
+                    <tr><th>Year</th><td id="dashboard-year">Loading...</td></tr>
+                </tbody>
+            </table>
+            <button type="button" id="logout-button">🚪 Logout</button>
+        </section>
+
+        <section>
+            <h2>My Application Summary</h2>
+            <div class="stat-cards">
+                <div class="stat-card">
+                    <h4>Total Applications</h4>
+                    <div class="stat-value" id="total-applications">0</div>
+                </div>
+                <div class="stat-card">
+                    <h4>Pending</h4>
+                    <div class="stat-value" id="pending-applications">0</div>
+                </div>
+                <div class="stat-card">
+                    <h4>Approved</h4>
+                    <div class="stat-value" id="approved-applications">0</div>
+                </div>
+                <div class="stat-card">
+                    <h4>Rejected</h4>
+                    <div class="stat-value" id="rejected-applications">0</div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Quick Actions</h2>
+            <p><a href="apply-pass.html">📝 Apply for a Pass</a></p>
+            <p><a href="my-pass.html">🎫 View My Pass</a></p>
+            <p><a href="renew-pass.html">🔄 Renew Pass</a></p>
+            <p><a href="payments.html">💳 Payment History</a></p>
+            <p><a href="profile.html">👤 My Profile</a></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>PassPortal — Campus Transport Pass Management System</p>
+        <p>© 2026–2027 | Student Project</p>
+    </footer>
+</body>
+</html>

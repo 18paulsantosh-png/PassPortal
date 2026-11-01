@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Routes — PassPortal</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <header>
+        <h1>PassPortal</h1>
+        <p>Campus Transport Pass Management System</p>
+        <nav>
+            <a href="../index.html">Home</a>
+            <a href="routes.html">Routes</a>
+            <a href="validation.html">Validate Pass</a>
+            <a href="login.html">Login</a>
+            <a href="register.html">Register</a>
+        </nav>
+    </header>
+
+    <main class="content-page">
+        <section class="section animate-in">
+            <div class="section-header">
+                <h2>Available Bus Routes</h2>
+                <p>Browse all campus transport routes and their fares</p>
+            </div>
+
+            <div class="search-bar">
+                <input type="text" id="route-search" placeholder="Search routes..." class="search-input">
+            </div>
+
+            <div class="table-responsive">
+                <table class="data-table">
+                    <thead>
+                        <tr>
+                            <th>Route ID</th>
+                            <th>Route Name</th>
+                            <th>Stops</th>
+                            <th>Monthly Fare</th>
+                        </tr>
+                    </thead>
+                    <tbody id="public-routes-table-body">
+                        <!-- Populated dynamically by script.js -->
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <section class="section animate-in">
+            <div class="section-header">
+                <h2>How to Apply for a Bus Pass</h2>
+                <p>Follow these simple steps to get your campus transport pass</p>
+            </div>
+
+            <div class="steps-list">
+                <ol>
+                    <li><strong>Create an Account</strong> — Register on PassPortal with your student details.</li>
+                    <li><strong>Log In</strong> — Sign in with your registered email and password.</li>
+                    <li><strong>Choose a Route</strong> — Browse the available routes and pick the one that suits you.</li>
+                    <li><strong>Submit Application</strong> — Fill in the application form from your student dashboard.</li>
+                    <li><strong>Wait for Approval</strong> — The admin will review and approve your application.</li>
+                    <li><strong>Download Your Pass</strong> — Once approved, download or view your digital bus pass.</li>
+                </ol>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>PassPortal — Campus Transport Pass Management System</p>
+        <p>© 2026–2027 | Student Project</p>
+    </footer>
+
+    <script src="../script.js"></script>
+</body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validate Pass — PassPortal</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <header>
+        <h1>PassPortal</h1>
+        <p>Campus Transport Pass Management System</p>
+        <nav>
+            <a href="../index.html">Home</a>
+            <a href="routes.html">Routes</a>
+            <a href="validation.html">Validate Pass</a>
+            <a href="login.html">Login</a>
+            <a href="register.html">Register</a>
+        </nav>
+    </header>
+
+    <main class="form-page">
+        <div class="form-container animate-in">
+            <div class="form-header">
+                <h2>Validate Your Pass</h2>
+                <p>Check the current status of a bus pass application</p>
+            </div>
+
+            <form id="validation-form">
+                <div class="form-group">
+                    <label for="validate-pass-id">Application ID</label>
+                    <input type="text" id="validate-pass-id" placeholder="Enter Application ID e.g. APP..." required>
+                </div>
+
+                <button type="submit" class="btn btn-primary btn-block">Validate Pass</button>
+            </form>
+
+            <div id="validation-message" class="form-message"></div>
+
+            <div id="validation-result" class="validation-result">
+                <!-- Populated dynamically by script.js -->
+            </div>
+        </div>
+
+        <div class="form-container animate-in" style="margin-top: 2rem;">
+            <div class="form-header">
+                <h2>Understanding Pass Statuses</h2>
+            </div>
+
+            <div class="status-descriptions">
+                <div class="status-item">
+                    <span class="status-badge status-pending">Pending</span>
+                    <p>Your application has been submitted and is awaiting review by the admin.</p>
+                </div>
+                <div class="status-item">
+                    <span class="status-badge status-approved">Approved</span>
+                    <p>Your bus pass has been approved. You can download it from your dashboard.</p>
+                </div>
+                <div class="status-item">
+                    <span class="status-badge status-rejected">Rejected</span>
+                    <p>Your application was not approved. Check the remarks or contact the admin.</p>
+                </div>
+                <div class="status-item">
+                    <span class="status-badge status-expired">Expired</span>
+                    <p>Your pass validity has ended. Please submit a new application to renew.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>PassPortal — Campus Transport Pass Management System</p>
+        <p>© 2026–2027 | Student Project</p>
+    </footer>
+
+    <script src="../script.js"></script>
+</body>
+</html>

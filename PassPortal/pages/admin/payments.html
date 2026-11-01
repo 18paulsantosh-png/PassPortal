@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../style.css">
+    <script src="../../script.js" defer></script>
+    <title>Payment Management | PassPortal</title>
+</head>
+<body>
+    <header>
+        <h1>PassPortal</h1>
+        <p>Payment Management</p>
+        <nav>
+            <a href="../../index.html">Home</a>
+            <a href="dashboard.html">Dashboard</a>
+            <a href="students.html">Students</a>
+            <a href="routes.html">Routes</a>
+            <a href="applications.html">Applications</a>
+            <a href="payments.html">Payments</a>
+            <a href="passes.html">Passes</a>
+            <a href="../login.html">Logout</a>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Payment Overview</h2>
+            <p>View all payment records and revenue from transport pass fees.</p>
+            <h3 style="margin-top: 16px; padding: 16px 20px; border-radius: 12px; background: linear-gradient(135deg, #f0edff, #e8fffe);">
+                Total Revenue: <span id="admin-total-revenue" style="color: #00b894; font-size: 1.3rem;">₹0</span>
+            </h3>
+        </section>
+
+        <section>
+            <h2>All Transactions</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>App ID</th>
+                        <th>Student</th>
+                        <th>Amount</th>
+                        <th>Date</th>
+                        <th>Type</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody id="admin-payments-table-body">
+                    <tr><td colspan="6" style="text-align:center; padding:40px;">Loading payments...</td></tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section>
+            <h2>Quick Links</h2>
+            <p><a href="dashboard.html">← Back to Dashboard</a></p>
+            <p><a href="applications.html">📋 Review Applications</a></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>PassPortal — Campus Transport Pass Management System</p>
+        <p>© 2026–2027 | Student Project</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../style.css">
+    <script src="../../script.js" defer></script>
+    <title>My Transport Pass | PassPortal</title>
+</head>
+<body>
+    <header>
+        <h1>PassPortal</h1>
+        <p>My Transport Pass</p>
+        <nav>
+            <a href="../../index.html">Home</a>
+            <a href="dashboard.html">Dashboard</a>
+            <a href="profile.html">My Profile</a>
+            <a href="../routes.html">Routes</a>
+            <a href="../validation.html">Validate Pass</a>
+            <a href="../login.html">Logout</a>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>My Transport Applications</h2>
+            <p>View your submitted applications and their current status.</p>
+            <div id="my-pass-message"></div>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Application ID</th>
+                        <th>Route</th>
+                        <th>Pass Type</th>
+                        <th>Duration</th>
+                        <th>Start Date</th>
+                        <th>Fee</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody id="my-pass-table-body">
+                    <tr><td colspan="7" style="text-align:center; padding:40px;">Loading applications...</td></tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section>
+            <h2>Pass Actions</h2>
+            <p><a href="apply-pass.html">📝 Apply for a New Pass</a></p>
+            <p><a href="renew-pass.html">🔄 Request Pass Renewal</a></p>
+            <p><a href="payments.html">💳 View Payment History</a></p>
+            <p><a href="../validation.html">✅ Validate a Pass</a></p>
+            <p><a href="dashboard.html">← Back to Dashboard</a></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>PassPortal — Campus Transport Pass Management System</p>
+        <p>© 2026–2027 | Student Project</p>
+    </footer>
+</body>
+</html>

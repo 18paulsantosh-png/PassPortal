@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../style.css">
+    <script src="../../script.js" defer></script>
+    <title>Payment History | PassPortal</title>
+</head>
+<body>
+    <header>
+        <h1>PassPortal</h1>
+        <p>Student Payment History</p>
+        <nav>
+            <a href="../../index.html">Home</a>
+            <a href="dashboard.html">Dashboard</a>
+            <a href="profile.html">My Profile</a>
+            <a href="../routes.html">Routes</a>
+            <a href="../validation.html">Validate Pass</a>
+            <a href="../login.html">Logout</a>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Payment History</h2>
+            <p>Review transport pass fees and payment records associated with your account.</p>
+        </section>
+
+        <section>
+            <h2>Transaction Records</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Application ID</th>
+                        <th>Amount</th>
+                        <th>Date</th>
+                        <th>Pass Type</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody id="student-payments-table-body">
+                    <tr><td colspan="5" style="text-align:center; padding:40px;">Loading payment records...</td></tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section>
+            <h2>Related Actions</h2>
+            <p><a href="apply-pass.html">📝 Apply for a Transport Pass</a></p>
+            <p><a href="renew-pass.html">🔄 Renew Your Pass</a></p>
+            <p><a href="my-pass.html">🎫 View My Transport Pass</a></p>
+            <p><a href="dashboard.html">← Back to Dashboard</a></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>PassPortal — Campus Transport Pass Management System</p>
+        <p>© 2026–2027 | Student Project</p>
+    </footer>
+</body>
+</html>
